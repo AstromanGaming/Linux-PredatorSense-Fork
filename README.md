@@ -1,22 +1,26 @@
-## PredatorSense™ clone for ```PH315-54-760S```
-### Controls fan speed, gaming modes and undervolting on Linux. This application is intended for Acer Predator Helios 300 (2021) model.
+
+# This is a fork of [Linux-PredatorSense by mohsunb](https://github.com/mohsunb/PredatorSense)
+
+### PredatorSense™ clone for ```PH315-54-760S```
+
+Controls fan speed, gaming modes and undervolting on Linux. This application is intended for Acer Predator Helios 300 (2021) model.
 
 ![Predator Sense](LinuxPredatorSense.png)
 
-## Disclaimer:
+### Disclaimer:
 * Secure Boot **IS** \* supported if you only use the ```acpi_ec``` package.
 * Secure Boot is **NOT** \* supported if you want to control CPU voltage offsets using the ```msr-tools``` and ```undervolt``` packages.
 * Using this application with other laptops may potentially damage them. Proceed at your discretion.
 
-## Install:
+### Install:
 - From the command line
 ```
 git clone https://github.com/snowyoneill/Linux-PredatorSense/
 cd Linux-PredatorSense/
 ``` 
 
-## Usage:
-### COMMAND LINE  
+### Usage:
+#### COMMAND LINE  
  - ```sudo``` is required in order to access the Super I/O EC registers and apply undervolt offsets.
   - From the command line run the main script as root:
   ```
@@ -31,7 +35,7 @@ _[OPTIONAL]_
     ```
   - Next set ```COREOFFSET``` and ```CACHEOFFSET``` to the mV that you determined to be stable via throttlestop on windows.
 
-### ICON
+#### ICON
  - Alternatively you can copy the .desktop file to your applications folder and launch the program via it's icon.
   - Open ```predator-sense.desktop``` in a text editor.
   - Set ```<path_to_PredatorSense>``` to the directory where you downloaded this project.
@@ -45,7 +49,7 @@ _[OPTIONAL]_
   ```
   - Now launch via the application and on initialization it will prompt for the user password.
 
-### NVIDIA-POWERD
+#### NVIDIA-POWERD
 - After switching predator modes \* **YOU MAY NEED TO RESTART NVIDIA-POWERD SERVICE IN ORDER TO DETECT NEW TGP** \*
 ```
 sudo systemctl restart nvidia-powerd
@@ -55,7 +59,7 @@ sudo systemctl restart nvidia-powerd
 nvidia-smi
 ```
 
-## Dependencies:
+### Dependencies:
 * Ubuntu / Linux Mint:
   ```
   sudo apt-get install python3-pyqt5, python3-pyqt5.qtchart
@@ -103,9 +107,9 @@ Packages:
 * ```undervolt``` -> [Undervolt by georgewhewell](https://github.com/georgewhewell/undervolt)
 * ```msr-tools``` -> [msr-tools by intel](https://github.com/intel/msr-tools)
 
-## This is a fork of [PredatorSense by mohsunb](https://github.com/mohsunb/PredatorSense), customized for ```PH315-54```
+### This is a fork of [PredatorSense by mohsunb](https://github.com/mohsunb/PredatorSense), customized for ```PH315-54```
 
-## Changelog:
+### Changelog:
 
 Mar 12, 2024
 
@@ -162,3 +166,5 @@ Dec 22
 - New function to query predator mode.
 - New function to read fan speed.
 - Lots of refactoring.
+
+
