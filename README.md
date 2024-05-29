@@ -1,3 +1,4 @@
+### _Fork [README](https://github.com/AstromanGaming/Linux-PredatorSense-Fork/blob/master/README_FORK.md)_
 
 # This is a fork of [Linux-PredatorSense by snowyoneill](https://github.com/snowyoneill/Linux-PredatorSense)
 
