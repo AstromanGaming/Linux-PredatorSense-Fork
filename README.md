@@ -1,5 +1,5 @@
 
-# This is a fork of [Linux-PredatorSense by mohsunb](https://github.com/mohsunb/PredatorSense)
+# This is a fork of [Linux-PredatorSense by snowyoneill](https://github.com/snowyoneill/Linux-PredatorSense)
 
 ### PredatorSense™ clone for ```PH315-54-760S```
 
